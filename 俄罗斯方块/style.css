@@ -1,3 +1,12 @@
+html {
+    touch-action: manipulation;
+    /* 取消移动端300ms延迟 */
+}
+
+h3 {
+    text-align: center;
+}
+
 .game {
     width: 200px;
     height: 400px;
@@ -6,14 +15,63 @@
     border-right: 1px solid blueviolet;
     border-bottom: 1px solid blueviolet;
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 60px;
+    left: 40px;
 }
 
 #others {
     position: absolute;
-    top: 50px;
-    left: 270px;
+    top: 60px;
+    left: 260px;
+}
+
+#click {
+    position: absolute;
+    top: 326px;
+    left: 260px;
+}
+
+#click div {
+    width: 30px;
+    height: 30px;
+    background-color: #484444;
+    color: white;
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+
+/* #click>div:last-child {
+    width: 80px;
+} */
+
+#click>div:nth-child(1) {
+    left: 30px;
+}
+
+#click>div:nth-child(2) {
+    left: 0;
+    top: 30px;
+}
+
+#click>div:nth-child(3) {
+    top: 30px;
+    left: 60px;
+}
+
+#click>div:nth-child(4) {
+    top: 60px;
+    left: 30px;
+}
+
+#click>div:nth-child(5) {
+    top: 105px;
+    left: 0;
+    width: 90px;
 }
 
 .next {

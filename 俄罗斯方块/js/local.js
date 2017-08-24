@@ -31,6 +31,24 @@ var Local = function() {
         }
     }
 
+    var UP = document.getElementById("up");
+    var bindClickEvent = function() {
+        document.onclick = function(e) {
+            var target = e.target.getAttribute("id")
+            if (target === "up") { // up
+                game.rotate();
+            } else if (target === "right") { //right
+                game.right();
+            } else if (target === "down") { //down
+                game.down();
+            } else if (target === "left") { //left
+                game.left();
+            } else if (target === "fall") { //space
+                game.fall();
+            }
+        }
+    }
+
     // 移动
     var move = function() {
         timeFunc();
@@ -81,6 +99,7 @@ var Local = function() {
         game = new Game();
         game.init(doms, generateType(), generateDir());
         bindKeyEvent();
+        bindClickEvent();
         game.performNext(generateType(), generateDir());
         timer = setInterval(move, INTERVAL);
     }
