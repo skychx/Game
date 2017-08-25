@@ -1,0 +1,33 @@
+h2 {
+    text-align: center;
+}
+
+#btn {
+    width: 80px;
+    height: 26px;
+    color: #888888;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    color: black;
+}
+
+canvas {
+    display: block;
+    margin: 30px auto 30px;
+    box-shadow: -2px -2px 2px #efefef, 5px 5px 5px #b9b9b9;
+}
+
+#winner {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}

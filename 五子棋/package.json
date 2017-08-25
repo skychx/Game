@@ -1,0 +1,15 @@
+{
+    "name": "tetris",
+    "version": "1.0.0",
+    "description": "俄罗斯方块",
+    "main": "script.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "server": "browser-sync start --server --files '*.css, *.html' "
+    },
+    "author": "skychx",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.18.13"
+    }
+}
