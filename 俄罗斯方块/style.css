@@ -4,7 +4,8 @@ html {
 }
 
 h3 {
-    text-align: center;
+    /* text-align: center; */
+    padding-left: 120px
 }
 
 .game {
