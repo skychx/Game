@@ -27,20 +27,28 @@ h3 {
 
 #click {
     position: absolute;
-    top: 326px;
+    top: 236px;
     left: 260px;
 }
 
 #click div {
+    position: absolute;
     width: 30px;
     height: 30px;
     background-color: #484444;
     color: white;
-    position: absolute;
+    border: 1px solid #484444;
+    border-radius: 4px;
     text-align: center;
     font-size: 20px;
     line-height: 30px;
     cursor: pointer;
+    /* 防止快速点击按钮时选中文本 */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
     box-sizing: border-box;
 }
 
@@ -50,26 +58,32 @@ h3 {
 } */
 
 #click>div:nth-child(1) {
-    left: 30px;
+    left: 0px;
+    width: 90px;
 }
 
 #click>div:nth-child(2) {
-    left: 0;
-    top: 30px;
+    left: 30px;
+    top: 90px;
 }
 
 #click>div:nth-child(3) {
-    top: 30px;
-    left: 60px;
+    left: 0;
+    top: 120px;
 }
 
 #click>div:nth-child(4) {
-    top: 60px;
-    left: 30px;
+    top: 120px;
+    left: 60px;
 }
 
 #click>div:nth-child(5) {
-    top: 105px;
+    top: 150px;
+    left: 30px;
+}
+
+#click>div:nth-child(6) {
+    top: 195px;
     left: 0;
     width: 90px;
 }
@@ -89,9 +103,9 @@ h3 {
 }
 
 #gameOver {
-    margin-top: 10px;
+    margin-top: 6px;
     color: red;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 20px;
 }
 

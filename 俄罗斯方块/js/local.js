@@ -31,20 +31,27 @@ var Local = function() {
         }
     }
 
-    var UP = document.getElementById("up");
     var bindClickEvent = function() {
         document.onclick = function(e) {
             var target = e.target.getAttribute("id")
-            if (target === "up") { // up
+            if (target === "up") {
                 game.rotate();
-            } else if (target === "right") { //right
+            } else if (target === "right") {
                 game.right();
-            } else if (target === "down") { //down
+            } else if (target === "down") {
                 game.down();
-            } else if (target === "left") { //left
+            } else if (target === "left") {
                 game.left();
-            } else if (target === "fall") { //space
+            } else if (target === "fall") {
                 game.fall();
+            } else if (target === "newGame") {
+                document.getElementById("gameOver").innerText = "";
+                document.getElementById("time").innerText = "0";
+                document.getElementById("score").innerText = "0";
+                stop();
+                time = 0;
+                start();
+
             }
         }
     }
