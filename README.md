@@ -1,6 +1,6 @@
 # Game
 
-*(点击标题可直接在线预览)*
+*( 点击标题可直接在线预览 )*
 
 
 ### [2048](https://skychx.github.io/Game/my2048/my2048.html)

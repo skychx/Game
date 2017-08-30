@@ -1,11 +1,23 @@
 html {
-    touch-action: manipulation;
+    touch-action: manipulation
     /* 取消移动端300ms延迟 */
 }
 
+.wrapper {
+    position: relative;
+    width: 335px;
+    margin: 0 auto;
+}
+
 h3 {
-    /* text-align: center; */
-    padding-left: 120px
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.wrapper ul {
+    line-height: 20px;
+    position: absolute;
+    top: 470px;
 }
 
 .game {
@@ -17,19 +29,19 @@ h3 {
     border-bottom: 1px solid blueviolet;
     position: absolute;
     top: 60px;
-    left: 40px;
+    left: 0;
 }
 
 #others {
     position: absolute;
     top: 60px;
-    left: 260px;
+    left: 220px;
 }
 
 #click {
     position: absolute;
     top: 236px;
-    left: 260px;
+    left: 220px;
 }
 
 #click div {
@@ -56,44 +68,44 @@ h3 {
 
 /* #click>div:last-child {
     width: 80px;
-} */
+    } */
 
-#click>div:nth-child(1) {
-    left: 0px;
-    width: 90px;
-}
+    #click>div:nth-child(1) {
+        left: 0px;
+        width: 90px;
+    }
 
-#click>div:nth-child(2) {
-    left: 30px;
-    top: 90px;
-}
+    #click>div:nth-child(2) {
+        left: 30px;
+        top: 90px;
+    }
 
-#click>div:nth-child(3) {
-    left: 0;
-    top: 120px;
-}
+    #click>div:nth-child(3) {
+        left: 0;
+        top: 120px;
+    }
 
-#click>div:nth-child(4) {
-    top: 120px;
-    left: 60px;
-}
+    #click>div:nth-child(4) {
+        top: 120px;
+        left: 60px;
+    }
 
-#click>div:nth-child(5) {
-    top: 150px;
-    left: 30px;
-}
+    #click>div:nth-child(5) {
+        top: 150px;
+        left: 30px;
+    }
 
-#click>div:nth-child(6) {
-    top: 195px;
-    left: 0;
-    width: 90px;
-}
+    #click>div:nth-child(6) {
+        top: 195px;
+        left: 0;
+        width: 90px;
+    }
 
-.next {
-    width: 80px;
-    height: 80px;
-    background-color: #f2faff;
-    position: relative;
+    .next {
+        width: 80px;
+        height: 80px;
+        background-color: #f2faff;
+        position: relative;
     /* top: 20px;
     left: 260px;  */
     border: 1px solid blueviolet;
